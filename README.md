@@ -246,14 +246,9 @@ The `new Picker(options)` constructor supports several options:
 
 <!-- picker API start -->
 
-Name | Type | Default | Description |
------- | ------ | ------ | ------ |
-`customCategorySorting` | function | - | Function to sort custom category strings (sorted alphabetically by default)  |
-`customEmoji` | CustomEmoji[] | - | Array of custom emoji |
-`dataSource` | string | "https://cdn.jsdelivr.net/npm/emoji-picker-element-data@^1/en/emojibase/data.json" | URL to fetch the emoji data from (`data-source` when used as an attribute) |
-`i18n` | I18n | - | i18n object (see below for details) |
-`locale` | string | "en" | Locale string |
-`skinToneEmoji` | string | "🖐️" | The emoji to use for the skin tone picker (`skin-tone-emoji` when used as an attribute) |
+Name | Type |
+:------ | :------ |
+`__namedParameters` | *PickerConstructorOptions* |
 
 
 
@@ -369,227 +364,4368 @@ Full API:
 
 #### Constructors
 
-#####  constructor
+##### constructor
 
-\+ **new Database**(`__namedParameters`: object): *Database*
+\+ **new default**(`__namedParameters?`: *PickerConstructorOptions*): *default*
 
-Create a new Database.
+###### Parameters:
 
-Note that multiple Databases pointing to the same locale will share the
-same underlying IndexedDB connection and database.
+Name | Type |
+:------ | :------ |
+`__namedParameters` | *PickerConstructorOptions* |
 
-**Parameters:**
+**Returns:** *default*
 
-▪`Default value`  **__namedParameters**: *object*= {}
+Defined in: src/types/picker.ts:9
 
-Name | Type | Default | Description |
------- | ------ | ------ | ------ |
-`customEmoji` | CustomEmoji[] | [] | Array of custom emoji  |
-`dataSource` | string | "https://cdn.jsdelivr.net/npm/emoji-picker-element-data@^1/en/emojibase/data.json" | URL to fetch the emoji data from |
-`locale` | string | "en" | Locale string |
+#### Properties
 
-**Returns:** *Database*
+##### ATTRIBUTE\_NODE
 
-#### Accessors
+• `Readonly` **ATTRIBUTE\_NODE**: *number*
 
-#####  customEmoji
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10866
 
-• **get customEmoji**(): *CustomEmoji[]*
+___
 
-Return the custom emoji associated with this Database, or the empty array if none.
+##### CDATA\_SECTION\_NODE
 
-**Returns:** *CustomEmoji[]*
+• `Readonly` **CDATA\_SECTION\_NODE**: *number*
 
-• **set customEmoji**(`customEmoji`: CustomEmoji[]): *void*
+node is a CDATASection node.
 
-Set the custom emoji for this database. Throws an error if custom emoji are not in the correct format.
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10870
 
-**Parameters:**
+___
 
-Name | Type | Description |
------- | ------ | ------ |
-`customEmoji` | CustomEmoji[] |   |
+##### COMMENT\_NODE
 
-**Returns:** *void*
+• `Readonly` **COMMENT\_NODE**: *number*
+
+node is a Comment node.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10874
+
+___
+
+##### DOCUMENT\_FRAGMENT\_NODE
+
+• `Readonly` **DOCUMENT\_FRAGMENT\_NODE**: *number*
+
+node is a DocumentFragment node.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10878
+
+___
+
+##### DOCUMENT\_NODE
+
+• `Readonly` **DOCUMENT\_NODE**: *number*
+
+node is a document.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10882
+
+___
+
+##### DOCUMENT\_POSITION\_CONTAINED\_BY
+
+• `Readonly` **DOCUMENT\_POSITION\_CONTAINED\_BY**: *number*
+
+Set when other is a descendant of node.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10886
+
+___
+
+##### DOCUMENT\_POSITION\_CONTAINS
+
+• `Readonly` **DOCUMENT\_POSITION\_CONTAINS**: *number*
+
+Set when other is an ancestor of node.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10890
+
+___
+
+##### DOCUMENT\_POSITION\_DISCONNECTED
+
+• `Readonly` **DOCUMENT\_POSITION\_DISCONNECTED**: *number*
+
+Set when node and other are not in the same tree.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10894
+
+___
+
+##### DOCUMENT\_POSITION\_FOLLOWING
+
+• `Readonly` **DOCUMENT\_POSITION\_FOLLOWING**: *number*
+
+Set when other is following node.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10898
+
+___
+
+##### DOCUMENT\_POSITION\_IMPLEMENTATION\_SPECIFIC
+
+• `Readonly` **DOCUMENT\_POSITION\_IMPLEMENTATION\_SPECIFIC**: *number*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10899
+
+___
+
+##### DOCUMENT\_POSITION\_PRECEDING
+
+• `Readonly` **DOCUMENT\_POSITION\_PRECEDING**: *number*
+
+Set when other is preceding node.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10903
+
+___
+
+##### DOCUMENT\_TYPE\_NODE
+
+• `Readonly` **DOCUMENT\_TYPE\_NODE**: *number*
+
+node is a doctype.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10907
+
+___
+
+##### ELEMENT\_NODE
+
+• `Readonly` **ELEMENT\_NODE**: *number*
+
+node is an element.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10911
+
+___
+
+##### ENTITY\_NODE
+
+• `Readonly` **ENTITY\_NODE**: *number*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10912
+
+___
+
+##### ENTITY\_REFERENCE\_NODE
+
+• `Readonly` **ENTITY\_REFERENCE\_NODE**: *number*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10913
+
+___
+
+##### NOTATION\_NODE
+
+• `Readonly` **NOTATION\_NODE**: *number*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10914
+
+___
+
+##### PROCESSING\_INSTRUCTION\_NODE
+
+• `Readonly` **PROCESSING\_INSTRUCTION\_NODE**: *number*
+
+node is a ProcessingInstruction node.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10918
+
+___
+
+##### TEXT\_NODE
+
+• `Readonly` **TEXT\_NODE**: *number*
+
+node is a Text node.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10922
+
+___
+
+##### accessKey
+
+• **accessKey**: *string*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6614
+
+___
+
+##### accessKeyLabel
+
+• `Readonly` **accessKeyLabel**: *string*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6615
+
+___
+
+##### assignedSlot
+
+• `Readonly` **assignedSlot**: HTMLSlotElement
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5080
+
+___
+
+##### attributes
+
+• `Readonly` **attributes**: NamedNodeMap
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5081
+
+___
+
+##### autocapitalize
+
+• **autocapitalize**: *string*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6616
+
+___
+
+##### autofocus
+
+• **autofocus**: *boolean*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:8028
+
+___
+
+##### baseURI
+
+• `Readonly` **baseURI**: *string*
+
+Returns node's node document's document base URL.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10781
+
+___
+
+##### childElementCount
+
+• `Readonly` **childElementCount**: *number*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:11338
+
+___
+
+##### childNodes
+
+• `Readonly` **childNodes**: *NodeListOf*<ChildNode\>
+
+Returns the children.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10785
+
+___
+
+##### children
+
+• `Readonly` **children**: HTMLCollection
+
+Returns the child elements.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:11342
+
+___
+
+##### classList
+
+• `Readonly` **classList**: DOMTokenList
+
+Allows for manipulation of element's class content attribute as a set of whitespace-separated tokens through a DOMTokenList object.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5085
+
+___
+
+##### className
+
+• **className**: *string*
+
+Returns the value of element's class content attribute. Can be set to change it.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5089
+
+___
+
+##### clientHeight
+
+• `Readonly` **clientHeight**: *number*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5090
+
+___
+
+##### clientLeft
+
+• `Readonly` **clientLeft**: *number*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5091
+
+___
+
+##### clientTop
+
+• `Readonly` **clientTop**: *number*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5092
+
+___
+
+##### clientWidth
+
+• `Readonly` **clientWidth**: *number*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5093
+
+___
+
+##### contentEditable
+
+• **contentEditable**: *string*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5245
+
+___
+
+##### customCategorySorting
+
+• `Optional` **customCategorySorting**: (`a`: *string*, `b`: *string*) => *number*
+
+###### Type declaration:
+
+▸ (`a`: *string*, `b`: *string*): *number*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`a` | *string* |
+`b` | *string* |
+
+**Returns:** *number*
+
+Defined in: src/types/picker.ts:9
+
+Defined in: src/types/picker.ts:9
+
+___
+
+##### customEmoji
+
+• `Optional` **customEmoji**: *CustomEmoji*[]
+
+Defined in: src/types/picker.ts:8
+
+___
+
+##### dataSource
+
+• **dataSource**: *string*
+
+Defined in: src/types/picker.ts:4
+
+___
+
+##### dataset
+
+• `Readonly` **dataset**: DOMStringMap
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:8029
+
+___
+
+##### dir
+
+• **dir**: *string*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6617
+
+___
+
+##### draggable
+
+• **draggable**: *boolean*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6618
+
+___
+
+##### enterKeyHint
+
+• **enterKeyHint**: *string*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5246
+
+___
+
+##### firstChild
+
+• `Readonly` **firstChild**: ChildNode
+
+Returns the first child.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10789
+
+___
+
+##### firstElementChild
+
+• `Readonly` **firstElementChild**: Element
+
+Returns the first child that is an element, and null otherwise.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:11346
+
+___
+
+##### hidden
+
+• **hidden**: *boolean*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6619
+
+___
+
+##### i18n
+
+• **i18n**: *I18n*
+
+Defined in: src/types/picker.ts:6
+
+___
+
+##### id
+
+• **id**: *string*
+
+Returns the value of element's id content attribute. Can be set to change it.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5097
+
+___
+
+##### innerHTML
+
+• **innerHTML**: *string*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:9611
+
+___
+
+##### innerText
+
+• **innerText**: *string*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6620
+
+___
+
+##### inputMode
+
+• **inputMode**: *string*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5247
+
+___
+
+##### isConnected
+
+• `Readonly` **isConnected**: *boolean*
+
+Returns true if node is connected and false otherwise.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10793
+
+___
+
+##### isContentEditable
+
+• `Readonly` **isContentEditable**: *boolean*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5248
+
+___
+
+##### lang
+
+• **lang**: *string*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6621
+
+___
+
+##### lastChild
+
+• `Readonly` **lastChild**: ChildNode
+
+Returns the last child.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10797
+
+___
+
+##### lastElementChild
+
+• `Readonly` **lastElementChild**: Element
+
+Returns the last child that is an element, and null otherwise.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:11350
+
+___
+
+##### localName
+
+• `Readonly` **localName**: *string*
+
+Returns the local name.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5101
+
+___
+
+##### locale
+
+• **locale**: *string*
+
+Defined in: src/types/picker.ts:5
+
+___
+
+##### namespaceURI
+
+• `Readonly` **namespaceURI**: *string*
+
+Returns the namespace.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5105
+
+___
+
+##### nextElementSibling
+
+• `Readonly` **nextElementSibling**: Element
+
+Returns the first following sibling that is an element, and null otherwise.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:11068
+
+___
+
+##### nextSibling
+
+• `Readonly` **nextSibling**: ChildNode
+
+Returns the next sibling.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10803
+
+___
+
+##### nodeName
+
+• `Readonly` **nodeName**: *string*
+
+Returns a string appropriate for the type of node.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10807
+
+___
+
+##### nodeType
+
+• `Readonly` **nodeType**: *number*
+
+Returns the type of node.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10811
+
+___
+
+##### nodeValue
+
+• **nodeValue**: *string*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10812
+
+___
+
+##### nonce
+
+• `Optional` **nonce**: *string*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:8030
+
+___
+
+##### offsetHeight
+
+• `Readonly` **offsetHeight**: *number*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6622
+
+___
+
+##### offsetLeft
+
+• `Readonly` **offsetLeft**: *number*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6623
+
+___
+
+##### offsetParent
+
+• `Readonly` **offsetParent**: Element
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6624
+
+___
+
+##### offsetTop
+
+• `Readonly` **offsetTop**: *number*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6625
+
+___
+
+##### offsetWidth
+
+• `Readonly` **offsetWidth**: *number*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6626
+
+___
+
+##### onabort
+
+• **onabort**: (`ev`: UIEvent) => *any*
+
+Fires when the user aborts the download.
+
+**`param`** The event.
+
+###### Type declaration:
+
+▸ (`ev`: UIEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | UIEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5804
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5804
+
+___
+
+##### onanimationcancel
+
+• **onanimationcancel**: (`ev`: AnimationEvent) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: AnimationEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | AnimationEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5805
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5805
+
+___
+
+##### onanimationend
+
+• **onanimationend**: (`ev`: AnimationEvent) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: AnimationEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | AnimationEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5806
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5806
+
+___
+
+##### onanimationiteration
+
+• **onanimationiteration**: (`ev`: AnimationEvent) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: AnimationEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | AnimationEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5807
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5807
+
+___
+
+##### onanimationstart
+
+• **onanimationstart**: (`ev`: AnimationEvent) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: AnimationEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | AnimationEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5808
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5808
+
+___
+
+##### onauxclick
+
+• **onauxclick**: (`ev`: MouseEvent) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: MouseEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | MouseEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5809
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5809
+
+___
+
+##### onblur
+
+• **onblur**: (`ev`: FocusEvent) => *any*
+
+Fires when the object loses the input focus.
+
+**`param`** The focus event.
+
+###### Type declaration:
+
+▸ (`ev`: FocusEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | FocusEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5814
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5814
+
+___
+
+##### oncancel
+
+• **oncancel**: (`ev`: Event) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: Event): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | Event |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5815
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5815
+
+___
+
+##### oncanplay
+
+• **oncanplay**: (`ev`: Event) => *any*
+
+Occurs when playback is possible, but would require further buffering.
+
+**`param`** The event.
+
+###### Type declaration:
+
+▸ (`ev`: Event): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | Event |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5820
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5820
+
+___
+
+##### oncanplaythrough
+
+• **oncanplaythrough**: (`ev`: Event) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: Event): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | Event |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5821
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5821
+
+___
+
+##### onchange
+
+• **onchange**: (`ev`: Event) => *any*
+
+Fires when the contents of the object or selection have changed.
+
+**`param`** The event.
+
+###### Type declaration:
+
+▸ (`ev`: Event): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | Event |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5826
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5826
+
+___
+
+##### onclick
+
+• **onclick**: (`ev`: MouseEvent) => *any*
+
+Fires when the user clicks the left mouse button on the object
+
+**`param`** The mouse event.
+
+###### Type declaration:
+
+▸ (`ev`: MouseEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | MouseEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5831
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5831
+
+___
+
+##### onclose
+
+• **onclose**: (`ev`: Event) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: Event): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | Event |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5832
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5832
+
+___
+
+##### oncontextmenu
+
+• **oncontextmenu**: (`ev`: MouseEvent) => *any*
+
+Fires when the user clicks the right mouse button in the client area, opening the context menu.
+
+**`param`** The mouse event.
+
+###### Type declaration:
+
+▸ (`ev`: MouseEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | MouseEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5837
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5837
+
+___
+
+##### oncopy
+
+• **oncopy**: (`ev`: ClipboardEvent) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: ClipboardEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | ClipboardEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:4879
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:4879
+
+___
+
+##### oncuechange
+
+• **oncuechange**: (`ev`: Event) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: Event): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | Event |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5838
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5838
+
+___
+
+##### oncut
+
+• **oncut**: (`ev`: ClipboardEvent) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: ClipboardEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | ClipboardEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:4880
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:4880
+
+___
+
+##### ondblclick
+
+• **ondblclick**: (`ev`: MouseEvent) => *any*
+
+Fires when the user double-clicks the object.
+
+**`param`** The mouse event.
+
+###### Type declaration:
+
+▸ (`ev`: MouseEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | MouseEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5843
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5843
+
+___
+
+##### ondrag
+
+• **ondrag**: (`ev`: DragEvent) => *any*
+
+Fires on the source object continuously during a drag operation.
+
+**`param`** The event.
+
+###### Type declaration:
+
+▸ (`ev`: DragEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | DragEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5848
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5848
+
+___
+
+##### ondragend
+
+• **ondragend**: (`ev`: DragEvent) => *any*
+
+Fires on the source object when the user releases the mouse at the close of a drag operation.
+
+**`param`** The event.
+
+###### Type declaration:
+
+▸ (`ev`: DragEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | DragEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5853
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5853
+
+___
+
+##### ondragenter
+
+• **ondragenter**: (`ev`: DragEvent) => *any*
+
+Fires on the target element when the user drags the object to a valid drop target.
+
+**`param`** The drag event.
+
+###### Type declaration:
+
+▸ (`ev`: DragEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | DragEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5858
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5858
+
+___
+
+##### ondragexit
+
+• **ondragexit**: (`ev`: Event) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: Event): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | Event |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5859
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5859
+
+___
+
+##### ondragleave
+
+• **ondragleave**: (`ev`: DragEvent) => *any*
+
+Fires on the target object when the user moves the mouse out of a valid drop target during a drag operation.
+
+**`param`** The drag event.
+
+###### Type declaration:
+
+▸ (`ev`: DragEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | DragEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5864
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5864
+
+___
+
+##### ondragover
+
+• **ondragover**: (`ev`: DragEvent) => *any*
+
+Fires on the target element continuously while the user drags the object over a valid drop target.
+
+**`param`** The event.
+
+###### Type declaration:
+
+▸ (`ev`: DragEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | DragEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5869
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5869
+
+___
+
+##### ondragstart
+
+• **ondragstart**: (`ev`: DragEvent) => *any*
+
+Fires on the source object when the user starts to drag a text selection or selected object.
+
+**`param`** The event.
+
+###### Type declaration:
+
+▸ (`ev`: DragEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | DragEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5874
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5874
+
+___
+
+##### ondrop
+
+• **ondrop**: (`ev`: DragEvent) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: DragEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | DragEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5875
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5875
+
+___
+
+##### ondurationchange
+
+• **ondurationchange**: (`ev`: Event) => *any*
+
+Occurs when the duration attribute is updated.
+
+**`param`** The event.
+
+###### Type declaration:
+
+▸ (`ev`: Event): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | Event |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5880
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5880
+
+___
+
+##### onemptied
+
+• **onemptied**: (`ev`: Event) => *any*
+
+Occurs when the media element is reset to its initial state.
+
+**`param`** The event.
+
+###### Type declaration:
+
+▸ (`ev`: Event): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | Event |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5885
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5885
+
+___
+
+##### onended
+
+• **onended**: (`ev`: Event) => *any*
+
+Occurs when the end of playback is reached.
+
+**`param`** The event
+
+###### Type declaration:
+
+▸ (`ev`: Event): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | Event |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5890
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5890
+
+___
+
+##### onerror
+
+• **onerror**: OnErrorEventHandlerNonNull
+
+Fires when an error occurs during object loading.
+
+**`param`** The event.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5895
+
+___
+
+##### onfocus
+
+• **onfocus**: (`ev`: FocusEvent) => *any*
+
+Fires when the object receives focus.
+
+**`param`** The event.
+
+###### Type declaration:
+
+▸ (`ev`: FocusEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | FocusEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5900
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5900
+
+___
+
+##### onfullscreenchange
+
+• **onfullscreenchange**: (`ev`: Event) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: Event): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | Event |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5106
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5106
+
+___
+
+##### onfullscreenerror
+
+• **onfullscreenerror**: (`ev`: Event) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: Event): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | Event |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5107
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5107
+
+___
+
+##### ongotpointercapture
+
+• **ongotpointercapture**: (`ev`: PointerEvent) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: PointerEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | PointerEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5901
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5901
+
+___
+
+##### oninput
+
+• **oninput**: (`ev`: Event) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: Event): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | Event |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5902
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5902
+
+___
+
+##### oninvalid
+
+• **oninvalid**: (`ev`: Event) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: Event): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | Event |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5903
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5903
+
+___
+
+##### onkeydown
+
+• **onkeydown**: (`ev`: KeyboardEvent) => *any*
+
+Fires when the user presses a key.
+
+**`param`** The keyboard event
+
+###### Type declaration:
+
+▸ (`ev`: KeyboardEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | KeyboardEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5908
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5908
+
+___
+
+##### onkeypress
+
+• **onkeypress**: (`ev`: KeyboardEvent) => *any*
+
+Fires when the user presses an alphanumeric key.
+
+**`param`** The event.
+
+###### Type declaration:
+
+▸ (`ev`: KeyboardEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | KeyboardEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5913
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5913
+
+___
+
+##### onkeyup
+
+• **onkeyup**: (`ev`: KeyboardEvent) => *any*
+
+Fires when the user releases a key.
+
+**`param`** The keyboard event
+
+###### Type declaration:
+
+▸ (`ev`: KeyboardEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | KeyboardEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5918
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5918
+
+___
+
+##### onload
+
+• **onload**: (`ev`: Event) => *any*
+
+Fires immediately after the browser loads the object.
+
+**`param`** The event.
+
+###### Type declaration:
+
+▸ (`ev`: Event): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | Event |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5923
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5923
+
+___
+
+##### onloadeddata
+
+• **onloadeddata**: (`ev`: Event) => *any*
+
+Occurs when media data is loaded at the current playback position.
+
+**`param`** The event.
+
+###### Type declaration:
+
+▸ (`ev`: Event): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | Event |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5928
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5928
+
+___
+
+##### onloadedmetadata
+
+• **onloadedmetadata**: (`ev`: Event) => *any*
+
+Occurs when the duration and dimensions of the media have been determined.
+
+**`param`** The event.
+
+###### Type declaration:
+
+▸ (`ev`: Event): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | Event |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5933
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5933
+
+___
+
+##### onloadstart
+
+• **onloadstart**: (`ev`: Event) => *any*
+
+Occurs when Internet Explorer begins looking for media data.
+
+**`param`** The event.
+
+###### Type declaration:
+
+▸ (`ev`: Event): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | Event |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5938
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5938
+
+___
+
+##### onlostpointercapture
+
+• **onlostpointercapture**: (`ev`: PointerEvent) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: PointerEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | PointerEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5939
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5939
+
+___
+
+##### onmousedown
+
+• **onmousedown**: (`ev`: MouseEvent) => *any*
+
+Fires when the user clicks the object with either mouse button.
+
+**`param`** The mouse event.
+
+###### Type declaration:
+
+▸ (`ev`: MouseEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | MouseEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5944
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5944
+
+___
+
+##### onmouseenter
+
+• **onmouseenter**: (`ev`: MouseEvent) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: MouseEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | MouseEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5945
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5945
+
+___
+
+##### onmouseleave
+
+• **onmouseleave**: (`ev`: MouseEvent) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: MouseEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | MouseEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5946
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5946
+
+___
+
+##### onmousemove
+
+• **onmousemove**: (`ev`: MouseEvent) => *any*
+
+Fires when the user moves the mouse over the object.
+
+**`param`** The mouse event.
+
+###### Type declaration:
+
+▸ (`ev`: MouseEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | MouseEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5951
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5951
+
+___
+
+##### onmouseout
+
+• **onmouseout**: (`ev`: MouseEvent) => *any*
+
+Fires when the user moves the mouse pointer outside the boundaries of the object.
+
+**`param`** The mouse event.
+
+###### Type declaration:
+
+▸ (`ev`: MouseEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | MouseEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5956
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5956
+
+___
+
+##### onmouseover
+
+• **onmouseover**: (`ev`: MouseEvent) => *any*
+
+Fires when the user moves the mouse pointer into the object.
+
+**`param`** The mouse event.
+
+###### Type declaration:
+
+▸ (`ev`: MouseEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | MouseEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5961
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5961
+
+___
+
+##### onmouseup
+
+• **onmouseup**: (`ev`: MouseEvent) => *any*
+
+Fires when the user releases a mouse button while the mouse is over the object.
+
+**`param`** The mouse event.
+
+###### Type declaration:
+
+▸ (`ev`: MouseEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | MouseEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5966
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5966
+
+___
+
+##### onpaste
+
+• **onpaste**: (`ev`: ClipboardEvent) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: ClipboardEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | ClipboardEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:4881
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:4881
+
+___
+
+##### onpause
+
+• **onpause**: (`ev`: Event) => *any*
+
+Occurs when playback is paused.
+
+**`param`** The event.
+
+###### Type declaration:
+
+▸ (`ev`: Event): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | Event |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5971
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5971
+
+___
+
+##### onplay
+
+• **onplay**: (`ev`: Event) => *any*
+
+Occurs when the play method is requested.
+
+**`param`** The event.
+
+###### Type declaration:
+
+▸ (`ev`: Event): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | Event |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5976
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5976
+
+___
+
+##### onplaying
+
+• **onplaying**: (`ev`: Event) => *any*
+
+Occurs when the audio or video has started playing.
+
+**`param`** The event.
+
+###### Type declaration:
+
+▸ (`ev`: Event): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | Event |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5981
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5981
+
+___
+
+##### onpointercancel
+
+• **onpointercancel**: (`ev`: PointerEvent) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: PointerEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | PointerEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5982
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5982
+
+___
+
+##### onpointerdown
+
+• **onpointerdown**: (`ev`: PointerEvent) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: PointerEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | PointerEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5983
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5983
+
+___
+
+##### onpointerenter
+
+• **onpointerenter**: (`ev`: PointerEvent) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: PointerEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | PointerEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5984
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5984
+
+___
+
+##### onpointerleave
+
+• **onpointerleave**: (`ev`: PointerEvent) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: PointerEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | PointerEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5985
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5985
+
+___
+
+##### onpointermove
+
+• **onpointermove**: (`ev`: PointerEvent) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: PointerEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | PointerEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5986
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5986
+
+___
+
+##### onpointerout
+
+• **onpointerout**: (`ev`: PointerEvent) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: PointerEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | PointerEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5987
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5987
+
+___
+
+##### onpointerover
+
+• **onpointerover**: (`ev`: PointerEvent) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: PointerEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | PointerEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5988
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5988
+
+___
+
+##### onpointerup
+
+• **onpointerup**: (`ev`: PointerEvent) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: PointerEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | PointerEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5989
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5989
+
+___
+
+##### onprogress
+
+• **onprogress**: (`ev`: *ProgressEvent*<EventTarget\>) => *any*
+
+Occurs to indicate progress while downloading media data.
+
+**`param`** The event.
+
+###### Type declaration:
+
+▸ (`ev`: *ProgressEvent*<EventTarget\>): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | *ProgressEvent*<EventTarget\> |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5994
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5994
+
+___
+
+##### onratechange
+
+• **onratechange**: (`ev`: Event) => *any*
+
+Occurs when the playback rate is increased or decreased.
+
+**`param`** The event.
+
+###### Type declaration:
+
+▸ (`ev`: Event): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | Event |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5999
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5999
+
+___
+
+##### onreset
+
+• **onreset**: (`ev`: Event) => *any*
+
+Fires when the user resets a form.
+
+**`param`** The event.
+
+###### Type declaration:
+
+▸ (`ev`: Event): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | Event |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6004
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6004
+
+___
+
+##### onresize
+
+• **onresize**: (`ev`: UIEvent) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: UIEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | UIEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6005
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6005
+
+___
+
+##### onscroll
+
+• **onscroll**: (`ev`: Event) => *any*
+
+Fires when the user repositions the scroll box in the scroll bar on the object.
+
+**`param`** The event.
+
+###### Type declaration:
+
+▸ (`ev`: Event): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | Event |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6010
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6010
+
+___
+
+##### onsecuritypolicyviolation
+
+• **onsecuritypolicyviolation**: (`ev`: SecurityPolicyViolationEvent) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: SecurityPolicyViolationEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | SecurityPolicyViolationEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6011
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6011
+
+___
+
+##### onseeked
+
+• **onseeked**: (`ev`: Event) => *any*
+
+Occurs when the seek operation ends.
+
+**`param`** The event.
+
+###### Type declaration:
+
+▸ (`ev`: Event): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | Event |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6016
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6016
+
+___
+
+##### onseeking
+
+• **onseeking**: (`ev`: Event) => *any*
+
+Occurs when the current playback position is moved.
+
+**`param`** The event.
+
+###### Type declaration:
+
+▸ (`ev`: Event): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | Event |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6021
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6021
+
+___
+
+##### onselect
+
+• **onselect**: (`ev`: Event) => *any*
+
+Fires when the current selection changes.
+
+**`param`** The event.
+
+###### Type declaration:
+
+▸ (`ev`: Event): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | Event |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6026
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6026
+
+___
+
+##### onselectionchange
+
+• **onselectionchange**: (`ev`: Event) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: Event): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | Event |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6027
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6027
+
+___
+
+##### onselectstart
+
+• **onselectstart**: (`ev`: Event) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: Event): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | Event |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6028
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6028
+
+___
+
+##### onstalled
+
+• **onstalled**: (`ev`: Event) => *any*
+
+Occurs when the download has stopped.
+
+**`param`** The event.
+
+###### Type declaration:
+
+▸ (`ev`: Event): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | Event |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6033
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6033
+
+___
+
+##### onsubmit
+
+• **onsubmit**: (`ev`: Event) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: Event): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | Event |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6034
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6034
+
+___
+
+##### onsuspend
+
+• **onsuspend**: (`ev`: Event) => *any*
+
+Occurs if the load operation has been intentionally halted.
+
+**`param`** The event.
+
+###### Type declaration:
+
+▸ (`ev`: Event): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | Event |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6039
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6039
+
+___
+
+##### ontimeupdate
+
+• **ontimeupdate**: (`ev`: Event) => *any*
+
+Occurs to indicate the current playback position.
+
+**`param`** The event.
+
+###### Type declaration:
+
+▸ (`ev`: Event): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | Event |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6044
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6044
+
+___
+
+##### ontoggle
+
+• **ontoggle**: (`ev`: Event) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: Event): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | Event |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6045
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6045
+
+___
+
+##### ontouchcancel
+
+• `Optional` **ontouchcancel**: (`ev`: TouchEvent) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: TouchEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | TouchEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6046
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6046
+
+___
+
+##### ontouchend
+
+• `Optional` **ontouchend**: (`ev`: TouchEvent) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: TouchEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | TouchEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6047
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6047
+
+___
+
+##### ontouchmove
+
+• `Optional` **ontouchmove**: (`ev`: TouchEvent) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: TouchEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | TouchEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6048
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6048
+
+___
+
+##### ontouchstart
+
+• `Optional` **ontouchstart**: (`ev`: TouchEvent) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: TouchEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | TouchEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6049
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6049
+
+___
+
+##### ontransitioncancel
+
+• **ontransitioncancel**: (`ev`: TransitionEvent) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: TransitionEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | TransitionEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6050
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6050
+
+___
+
+##### ontransitionend
+
+• **ontransitionend**: (`ev`: TransitionEvent) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: TransitionEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | TransitionEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6051
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6051
+
+___
+
+##### ontransitionrun
+
+• **ontransitionrun**: (`ev`: TransitionEvent) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: TransitionEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | TransitionEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6052
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6052
+
+___
+
+##### ontransitionstart
+
+• **ontransitionstart**: (`ev`: TransitionEvent) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: TransitionEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | TransitionEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6053
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6053
+
+___
+
+##### onvolumechange
+
+• **onvolumechange**: (`ev`: Event) => *any*
+
+Occurs when the volume is changed, or playback is muted or unmuted.
+
+**`param`** The event.
+
+###### Type declaration:
+
+▸ (`ev`: Event): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | Event |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6058
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6058
+
+___
+
+##### onwaiting
+
+• **onwaiting**: (`ev`: Event) => *any*
+
+Occurs when playback stops because the next frame of a video resource is not available.
+
+**`param`** The event.
+
+###### Type declaration:
+
+▸ (`ev`: Event): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | Event |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6063
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6063
+
+___
+
+##### onwheel
+
+• **onwheel**: (`ev`: WheelEvent) => *any*
+
+###### Type declaration:
+
+▸ (`ev`: WheelEvent): *any*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`ev` | WheelEvent |
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6064
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6064
+
+___
+
+##### outerHTML
+
+• **outerHTML**: *string*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5108
+
+___
+
+##### ownerDocument
+
+• `Readonly` **ownerDocument**: Document
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5109
+
+___
+
+##### parentElement
+
+• `Readonly` **parentElement**: HTMLElement
+
+Returns the parent element.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10820
+
+___
+
+##### parentNode
+
+• `Readonly` **parentNode**: Node & ParentNode
+
+Returns the parent.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10824
+
+___
+
+##### prefix
+
+• `Readonly` **prefix**: *string*
+
+Returns the namespace prefix.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5113
+
+___
+
+##### previousElementSibling
+
+• `Readonly` **previousElementSibling**: Element
+
+Returns the first preceding sibling that is an element, and null otherwise.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:11072
+
+___
+
+##### previousSibling
+
+• `Readonly` **previousSibling**: ChildNode
+
+Returns the previous sibling.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10828
+
+___
+
+##### scrollHeight
+
+• `Readonly` **scrollHeight**: *number*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5114
+
+___
+
+##### scrollLeft
+
+• **scrollLeft**: *number*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5115
+
+___
+
+##### scrollTop
+
+• **scrollTop**: *number*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5116
+
+___
+
+##### scrollWidth
+
+• `Readonly` **scrollWidth**: *number*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5117
+
+___
+
+##### shadowRoot
+
+• `Readonly` **shadowRoot**: ShadowRoot
+
+Returns element's shadow root, if any, and if shadow root's mode is "open", and null otherwise.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5121
+
+___
+
+##### skinToneEmoji
+
+• **skinToneEmoji**: *string*
+
+Defined in: src/types/picker.ts:7
+
+___
+
+##### slot
+
+• **slot**: *string*
+
+Returns the value of element's slot content attribute. Can be set to change it.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5125
+
+___
+
+##### spellcheck
+
+• **spellcheck**: *boolean*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6627
+
+___
+
+##### style
+
+• `Readonly` **style**: CSSStyleDeclaration
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5241
+
+___
+
+##### tabIndex
+
+• **tabIndex**: *number*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:8031
+
+___
+
+##### tagName
+
+• `Readonly` **tagName**: *string*
+
+Returns the HTML-uppercased qualified name.
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5129
+
+___
+
+##### textContent
+
+• **textContent**: *string*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10829
+
+___
+
+##### title
+
+• **title**: *string*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6628
+
+___
+
+##### translate
+
+• **translate**: *boolean*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6629
 
 #### Methods
 
-#####  close
+##### addEventListener
 
-▸ **close**(): *Promise‹void›*
+▸ **addEventListener**<K\>(`type`: K, `listener`: (`ev`: *EmojiPickerEventMap*[K]) => *any*, `options?`: *boolean* \| AddEventListenerOptions): *void*
 
-Closes the underlying IndexedDB connection. The Database is not usable after that (or any other Databases
-with the same locale).
+###### Type parameters:
 
-Note that as soon as any other non-close/delete method is called, the database will automatically reopen.
+Name | Type |
+:------ | :------ |
+`K` | *emoji-click* \| *skin-tone-change* |
 
-**Returns:** *Promise‹void›*
+###### Parameters:
 
-___
+Name | Type |
+:------ | :------ |
+`type` | K |
+`listener` | (`ev`: *EmojiPickerEventMap*[K]) => *any* |
+`options?` | *boolean* \| AddEventListenerOptions |
 
-#####  delete
+**Returns:** *void*
 
-▸ **delete**(): *Promise‹void›*
-
-Deletes the underlying IndexedDB database. The Database is not usable after that (or any other Databases
-with the same locale).
-
-Note that as soon as any other non-close/delete method is called, the database will be recreated.
-
-**Returns:** *Promise‹void›*
+Defined in: src/types/picker.ts:31
 
 ___
 
-#####  getEmojiByGroup
+##### after
 
-▸ **getEmojiByGroup**(`group`: number): *Promise‹NativeEmoji[]›*
+▸ **after**(...`nodes`: (*string* \| Node)[]): *void*
 
-Returns all emoji belonging to a group, ordered by `order`. Only returns native emoji;
-custom emoji don't belong to a group.
+Inserts nodes just after node, while replacing strings in nodes with equivalent Text nodes.
 
-Non-numbers throw an error.
+Throws a "HierarchyRequestError" DOMException if the constraints of the node tree are violated.
 
-**Parameters:**
+###### Parameters:
 
-Name | Type | Description |
------- | ------ | ------ |
-`group` | number | the group number  |
+Name | Type |
+:------ | :------ |
+`...nodes` | (*string* \| Node)[] |
 
-**Returns:** *Promise‹NativeEmoji[]›*
+**Returns:** *void*
 
-___
-
-#####  getEmojiBySearchQuery
-
-▸ **getEmojiBySearchQuery**(`query`: string): *Promise‹Emoji[]›*
-
-Returns all emoji matching the given search query, ordered by `order`.
-
-Empty/null strings throw an error.
-
-**Parameters:**
-
-Name | Type | Description |
------- | ------ | ------ |
-`query` | string | search query string  |
-
-**Returns:** *Promise‹Emoji[]›*
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:3498
 
 ___
 
-#####  getEmojiByShortcode
+##### animate
 
-▸ **getEmojiByShortcode**(`shortcode`: string): *Promise‹Emoji | null›*
+▸ **animate**(`keyframes`: Keyframe[] \| PropertyIndexedKeyframes, `options?`: *number* \| KeyframeAnimationOptions): Animation
 
-Return a single emoji matching the shortcode, or null if not found.
+###### Parameters:
 
-The colons around the shortcode should not be included when querying, e.g.
-use "slight_smile", not ":slight_smile:". Uppercase versus lowercase
-does not matter. Empty/null strings throw an error.
+Name | Type |
+:------ | :------ |
+`keyframes` | Keyframe[] \| PropertyIndexedKeyframes |
+`options?` | *number* \| KeyframeAnimationOptions |
 
-**Parameters:**
+**Returns:** Animation
 
-Name | Type | Description |
------- | ------ | ------ |
-`shortcode` | string |   |
-
-**Returns:** *Promise‹Emoji | null›*
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:2036
 
 ___
 
-#####  getEmojiByUnicodeOrName
+##### append
 
-▸ **getEmojiByUnicodeOrName**(`unicodeOrName`: string): *Promise‹Emoji | null›*
+▸ **append**(...`nodes`: (*string* \| Node)[]): *void*
 
-Return a single native emoji matching the unicode string, or
-a custom emoji matching the name, or null if not found.
+Inserts nodes after the last child of node, while replacing strings in nodes with equivalent Text nodes.
 
-In the case of native emoji, the unicode string can be either the
-main unicode string, or the unicode of one of the skin tone variants.
+Throws a "HierarchyRequestError" DOMException if the constraints of the node tree are violated.
 
-Empty/null strings throw an error.
+###### Parameters:
 
-**Parameters:**
+Name | Type |
+:------ | :------ |
+`...nodes` | (*string* \| Node)[] |
 
-Name | Type | Description |
------- | ------ | ------ |
-`unicodeOrName` | string | unicode (native emoji) or name (custom emoji)  |
+**Returns:** *void*
 
-**Returns:** *Promise‹Emoji | null›*
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:11356
 
 ___
 
-#####  getPreferredSkinTone
+##### appendChild
 
-▸ **getPreferredSkinTone**(): *Promise‹SkinTone›*
+▸ **appendChild**<T\>(`newChild`: T): T
 
-Get the user's preferred skin tone. Returns 0 if not found.
+###### Type parameters:
 
-**Returns:** *Promise‹SkinTone›*
+Name | Type |
+:------ | :------ |
+`T` | Node |
 
-___
+###### Parameters:
 
-#####  getTopFavoriteEmoji
+Name | Type |
+:------ | :------ |
+`newChild` | T |
 
-▸ **getTopFavoriteEmoji**(`limit`: number): *Promise‹Emoji[]›*
+**Returns:** T
 
-Get the top favorite emoji in descending order. If there are no favorite emoji yet, returns an empty array.
-
-**Parameters:**
-
-Name | Type | Description |
------- | ------ | ------ |
-`limit` | number | maximum number of results to return  |
-
-**Returns:** *Promise‹Emoji[]›*
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10830
 
 ___
 
-#####  incrementFavoriteEmojiCount
+##### attachShadow
 
-▸ **incrementFavoriteEmojiCount**(`unicodeOrName`: string): *Promise‹void›*
+▸ **attachShadow**(`init`: ShadowRootInit): ShadowRoot
 
-Increment the favorite count for an emoji by one. The unicode string must be non-empty. It should
-correspond to the base (non-skin-tone) unicode string from the emoji object, or in the case of
-custom emoji, it should be the name.
+Creates a shadow root for element and returns it.
 
-**Parameters:**
+###### Parameters:
 
-Name | Type | Description |
------- | ------ | ------ |
-`unicodeOrName` | string | unicode of a native emoji, or name of a custom emoji  |
+Name | Type |
+:------ | :------ |
+`init` | ShadowRootInit |
 
-**Returns:** *Promise‹void›*
+**Returns:** ShadowRoot
 
-___
-
-#####  ready
-
-▸ **ready**(): *Promise‹void›*
-
-Resolves when the Database is ready, or throws an error if
-the Database could not initialize.
-
-Note that you don't need to do this before calling other APIs – they will
-all wait for this promise to resolve before doing anything.
-
-**Returns:** *Promise‹void›*
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5133
 
 ___
 
-#####  setPreferredSkinTone
+##### before
 
-▸ **setPreferredSkinTone**(`skinTone`: SkinTone): *Promise‹void›*
+▸ **before**(...`nodes`: (*string* \| Node)[]): *void*
 
-Set the user's preferred skin tone. Non-numbers throw an error.
+Inserts nodes just before node, while replacing strings in nodes with equivalent Text nodes.
 
-**Parameters:**
+Throws a "HierarchyRequestError" DOMException if the constraints of the node tree are violated.
 
-Name | Type | Description |
------- | ------ | ------ |
-`skinTone` | SkinTone | preferred skin tone  |
+###### Parameters:
 
-**Returns:** *Promise‹void›*
+Name | Type |
+:------ | :------ |
+`...nodes` | (*string* \| Node)[] |
+
+**Returns:** *void*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:3504
+
+___
+
+##### blur
+
+▸ **blur**(): *void*
+
+**Returns:** *void*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:8032
+
+___
+
+##### click
+
+▸ **click**(): *void*
+
+**Returns:** *void*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:6630
+
+___
+
+##### cloneNode
+
+▸ **cloneNode**(`deep?`: *boolean*): Node
+
+Returns a copy of node. If deep is true, the copy also includes the node's descendants.
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`deep?` | *boolean* |
+
+**Returns:** Node
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10834
+
+___
+
+##### closest
+
+▸ **closest**<K\>(`selector`: K): HTMLElementTagNameMap[K]
+
+Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+
+###### Type parameters:
+
+Name | Type |
+:------ | :------ |
+`K` | *object* \| *a* \| *abbr* \| *address* \| *applet* \| *area* \| *article* \| *aside* \| *audio* \| *b* \| *base* \| *basefont* \| *bdi* \| *bdo* \| *blockquote* \| *body* \| *br* \| *button* \| *canvas* \| *caption* \| *cite* \| *code* \| *col* \| *colgroup* \| *data* \| *datalist* \| *dd* \| *del* \| *details* \| *dfn* \| *dialog* \| *dir* \| *div* \| *dl* \| *dt* \| *em* \| *embed* \| *fieldset* \| *figcaption* \| *figure* \| *font* \| *footer* \| *form* \| *frame* \| *frameset* \| *h1* \| *h2* \| *h3* \| *h4* \| *h5* \| *h6* \| *head* \| *header* \| *hgroup* \| *hr* \| *html* \| *i* \| *iframe* \| *img* \| *input* \| *ins* \| *kbd* \| *label* \| *legend* \| *li* \| *link* \| *main* \| *map* \| *mark* \| *marquee* \| *menu* \| *meta* \| *meter* \| *nav* \| *noscript* \| *ol* \| *optgroup* \| *option* \| *output* \| *p* \| *param* \| *picture* \| *pre* \| *progress* \| *q* \| *rp* \| *rt* \| *ruby* \| *s* \| *samp* \| *script* \| *section* \| *select* \| *slot* \| *small* \| *source* \| *span* \| *strong* \| *style* \| *sub* \| *summary* \| *sup* \| *table* \| *tbody* \| *td* \| *template* \| *textarea* \| *tfoot* \| *th* \| *thead* \| *time* \| *title* \| *tr* \| *track* \| *u* \| *ul* \| *var* \| *video* \| *wbr* \| *emoji-picker* |
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`selector` | K |
+
+**Returns:** HTMLElementTagNameMap[K]
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5137
+
+▸ **closest**<K\>(`selector`: K): SVGElementTagNameMap[K]
+
+###### Type parameters:
+
+Name | Type |
+:------ | :------ |
+`K` | *symbol* \| *a* \| *script* \| *style* \| *title* \| *circle* \| *clipPath* \| *defs* \| *desc* \| *ellipse* \| *feBlend* \| *feColorMatrix* \| *feComponentTransfer* \| *feComposite* \| *feConvolveMatrix* \| *feDiffuseLighting* \| *feDisplacementMap* \| *feDistantLight* \| *feFlood* \| *feFuncA* \| *feFuncB* \| *feFuncG* \| *feFuncR* \| *feGaussianBlur* \| *feImage* \| *feMerge* \| *feMergeNode* \| *feMorphology* \| *feOffset* \| *fePointLight* \| *feSpecularLighting* \| *feSpotLight* \| *feTile* \| *feTurbulence* \| *filter* \| *foreignObject* \| *g* \| *image* \| *line* \| *linearGradient* \| *marker* \| *mask* \| *metadata* \| *path* \| *pattern* \| *polygon* \| *polyline* \| *radialGradient* \| *rect* \| *stop* \| *svg* \| *switch* \| *text* \| *textPath* \| *tspan* \| *use* \| *view* |
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`selector` | K |
+
+**Returns:** SVGElementTagNameMap[K]
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5138
+
+▸ **closest**<E\>(`selector`: *string*): E
+
+###### Type parameters:
+
+Name | Type | Default |
+:------ | :------ | :------ |
+`E` | Element | Element |
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`selector` | *string* |
+
+**Returns:** E
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5139
+
+___
+
+##### compareDocumentPosition
+
+▸ **compareDocumentPosition**(`other`: Node): *number*
+
+Returns a bitmask indicating the position of other relative to node.
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`other` | Node |
+
+**Returns:** *number*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10838
+
+___
+
+##### contains
+
+▸ **contains**(`other`: Node): *boolean*
+
+Returns true if other is an inclusive descendant of node, and false otherwise.
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`other` | Node |
+
+**Returns:** *boolean*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10842
+
+___
+
+##### dispatchEvent
+
+▸ **dispatchEvent**(`event`: Event): *boolean*
+
+Dispatches a synthetic event event to target and returns true if either event's cancelable attribute value is false or its preventDefault() method was not invoked, and false otherwise.
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`event` | Event |
+
+**Returns:** *boolean*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5409
+
+___
+
+##### focus
+
+▸ **focus**(`options?`: FocusOptions): *void*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`options?` | FocusOptions |
+
+**Returns:** *void*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:8033
+
+___
+
+##### getAnimations
+
+▸ **getAnimations**(): Animation[]
+
+**Returns:** Animation[]
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:2037
+
+___
+
+##### getAttribute
+
+▸ **getAttribute**(`qualifiedName`: *string*): *string*
+
+Returns element's first attribute whose qualified name is qualifiedName, and null if there is no such attribute otherwise.
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`qualifiedName` | *string* |
+
+**Returns:** *string*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5143
+
+___
+
+##### getAttributeNS
+
+▸ **getAttributeNS**(`namespace`: *string*, `localName`: *string*): *string*
+
+Returns element's attribute whose namespace is namespace and local name is localName, and null if there is no such attribute otherwise.
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`namespace` | *string* |
+`localName` | *string* |
+
+**Returns:** *string*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5147
+
+___
+
+##### getAttributeNames
+
+▸ **getAttributeNames**(): *string*[]
+
+Returns the qualified names of all element's attributes. Can contain duplicates.
+
+**Returns:** *string*[]
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5151
+
+___
+
+##### getAttributeNode
+
+▸ **getAttributeNode**(`qualifiedName`: *string*): Attr
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`qualifiedName` | *string* |
+
+**Returns:** Attr
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5152
+
+___
+
+##### getAttributeNodeNS
+
+▸ **getAttributeNodeNS**(`namespace`: *string*, `localName`: *string*): Attr
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`namespace` | *string* |
+`localName` | *string* |
+
+**Returns:** Attr
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5153
+
+___
+
+##### getBoundingClientRect
+
+▸ **getBoundingClientRect**(): DOMRect
+
+**Returns:** DOMRect
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5154
+
+___
+
+##### getClientRects
+
+▸ **getClientRects**(): DOMRectList
+
+**Returns:** DOMRectList
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5155
+
+___
+
+##### getElementsByClassName
+
+▸ **getElementsByClassName**(`classNames`: *string*): *HTMLCollectionOf*<Element\>
+
+Returns a HTMLCollection of the elements in the object on which the method was invoked (a document or an element) that have all the classes given by classNames. The classNames argument is interpreted as a space-separated list of classes.
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`classNames` | *string* |
+
+**Returns:** *HTMLCollectionOf*<Element\>
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5159
+
+___
+
+##### getElementsByTagName
+
+▸ **getElementsByTagName**<K\>(`qualifiedName`: K): *HTMLCollectionOf*<HTMLElementTagNameMap[K]\>
+
+###### Type parameters:
+
+Name | Type |
+:------ | :------ |
+`K` | *object* \| *a* \| *abbr* \| *address* \| *applet* \| *area* \| *article* \| *aside* \| *audio* \| *b* \| *base* \| *basefont* \| *bdi* \| *bdo* \| *blockquote* \| *body* \| *br* \| *button* \| *canvas* \| *caption* \| *cite* \| *code* \| *col* \| *colgroup* \| *data* \| *datalist* \| *dd* \| *del* \| *details* \| *dfn* \| *dialog* \| *dir* \| *div* \| *dl* \| *dt* \| *em* \| *embed* \| *fieldset* \| *figcaption* \| *figure* \| *font* \| *footer* \| *form* \| *frame* \| *frameset* \| *h1* \| *h2* \| *h3* \| *h4* \| *h5* \| *h6* \| *head* \| *header* \| *hgroup* \| *hr* \| *html* \| *i* \| *iframe* \| *img* \| *input* \| *ins* \| *kbd* \| *label* \| *legend* \| *li* \| *link* \| *main* \| *map* \| *mark* \| *marquee* \| *menu* \| *meta* \| *meter* \| *nav* \| *noscript* \| *ol* \| *optgroup* \| *option* \| *output* \| *p* \| *param* \| *picture* \| *pre* \| *progress* \| *q* \| *rp* \| *rt* \| *ruby* \| *s* \| *samp* \| *script* \| *section* \| *select* \| *slot* \| *small* \| *source* \| *span* \| *strong* \| *style* \| *sub* \| *summary* \| *sup* \| *table* \| *tbody* \| *td* \| *template* \| *textarea* \| *tfoot* \| *th* \| *thead* \| *time* \| *title* \| *tr* \| *track* \| *u* \| *ul* \| *var* \| *video* \| *wbr* \| *emoji-picker* |
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`qualifiedName` | K |
+
+**Returns:** *HTMLCollectionOf*<HTMLElementTagNameMap[K]\>
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5160
+
+▸ **getElementsByTagName**<K\>(`qualifiedName`: K): *HTMLCollectionOf*<SVGElementTagNameMap[K]\>
+
+###### Type parameters:
+
+Name | Type |
+:------ | :------ |
+`K` | *symbol* \| *a* \| *script* \| *style* \| *title* \| *circle* \| *clipPath* \| *defs* \| *desc* \| *ellipse* \| *feBlend* \| *feColorMatrix* \| *feComponentTransfer* \| *feComposite* \| *feConvolveMatrix* \| *feDiffuseLighting* \| *feDisplacementMap* \| *feDistantLight* \| *feFlood* \| *feFuncA* \| *feFuncB* \| *feFuncG* \| *feFuncR* \| *feGaussianBlur* \| *feImage* \| *feMerge* \| *feMergeNode* \| *feMorphology* \| *feOffset* \| *fePointLight* \| *feSpecularLighting* \| *feSpotLight* \| *feTile* \| *feTurbulence* \| *filter* \| *foreignObject* \| *g* \| *image* \| *line* \| *linearGradient* \| *marker* \| *mask* \| *metadata* \| *path* \| *pattern* \| *polygon* \| *polyline* \| *radialGradient* \| *rect* \| *stop* \| *svg* \| *switch* \| *text* \| *textPath* \| *tspan* \| *use* \| *view* |
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`qualifiedName` | K |
+
+**Returns:** *HTMLCollectionOf*<SVGElementTagNameMap[K]\>
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5161
+
+▸ **getElementsByTagName**(`qualifiedName`: *string*): *HTMLCollectionOf*<Element\>
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`qualifiedName` | *string* |
+
+**Returns:** *HTMLCollectionOf*<Element\>
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5162
+
+___
+
+##### getElementsByTagNameNS
+
+▸ **getElementsByTagNameNS**(`namespaceURI`: *http://www.w3.org/1999/xhtml*, `localName`: *string*): *HTMLCollectionOf*<HTMLElement\>
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`namespaceURI` | *http://www.w3.org/1999/xhtml* |
+`localName` | *string* |
+
+**Returns:** *HTMLCollectionOf*<HTMLElement\>
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5163
+
+▸ **getElementsByTagNameNS**(`namespaceURI`: *http://www.w3.org/2000/svg*, `localName`: *string*): *HTMLCollectionOf*<SVGElement\>
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`namespaceURI` | *http://www.w3.org/2000/svg* |
+`localName` | *string* |
+
+**Returns:** *HTMLCollectionOf*<SVGElement\>
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5164
+
+▸ **getElementsByTagNameNS**(`namespaceURI`: *string*, `localName`: *string*): *HTMLCollectionOf*<Element\>
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`namespaceURI` | *string* |
+`localName` | *string* |
+
+**Returns:** *HTMLCollectionOf*<Element\>
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5165
+
+___
+
+##### getRootNode
+
+▸ **getRootNode**(`options?`: GetRootNodeOptions): Node
+
+Returns node's root.
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`options?` | GetRootNodeOptions |
+
+**Returns:** Node
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10846
+
+___
+
+##### hasAttribute
+
+▸ **hasAttribute**(`qualifiedName`: *string*): *boolean*
+
+Returns true if element has an attribute whose qualified name is qualifiedName, and false otherwise.
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`qualifiedName` | *string* |
+
+**Returns:** *boolean*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5169
+
+___
+
+##### hasAttributeNS
+
+▸ **hasAttributeNS**(`namespace`: *string*, `localName`: *string*): *boolean*
+
+Returns true if element has an attribute whose namespace is namespace and local name is localName.
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`namespace` | *string* |
+`localName` | *string* |
+
+**Returns:** *boolean*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5173
+
+___
+
+##### hasAttributes
+
+▸ **hasAttributes**(): *boolean*
+
+Returns true if element has attributes, and false otherwise.
+
+**Returns:** *boolean*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5177
+
+___
+
+##### hasChildNodes
+
+▸ **hasChildNodes**(): *boolean*
+
+Returns whether node has children.
+
+**Returns:** *boolean*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10850
+
+___
+
+##### hasPointerCapture
+
+▸ **hasPointerCapture**(`pointerId`: *number*): *boolean*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`pointerId` | *number* |
+
+**Returns:** *boolean*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5178
+
+___
+
+##### insertAdjacentElement
+
+▸ **insertAdjacentElement**(`position`: InsertPosition, `insertedElement`: Element): Element
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`position` | InsertPosition |
+`insertedElement` | Element |
+
+**Returns:** Element
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5179
+
+___
+
+##### insertAdjacentHTML
+
+▸ **insertAdjacentHTML**(`where`: InsertPosition, `html`: *string*): *void*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`where` | InsertPosition |
+`html` | *string* |
+
+**Returns:** *void*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5180
+
+___
+
+##### insertAdjacentText
+
+▸ **insertAdjacentText**(`where`: InsertPosition, `text`: *string*): *void*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`where` | InsertPosition |
+`text` | *string* |
+
+**Returns:** *void*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5181
+
+___
+
+##### insertBefore
+
+▸ **insertBefore**<T\>(`newChild`: T, `refChild`: Node): T
+
+###### Type parameters:
+
+Name | Type |
+:------ | :------ |
+`T` | Node |
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`newChild` | T |
+`refChild` | Node |
+
+**Returns:** T
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10851
+
+___
+
+##### isDefaultNamespace
+
+▸ **isDefaultNamespace**(`namespace`: *string*): *boolean*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`namespace` | *string* |
+
+**Returns:** *boolean*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10852
+
+___
+
+##### isEqualNode
+
+▸ **isEqualNode**(`otherNode`: Node): *boolean*
+
+Returns whether node and otherNode have the same properties.
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`otherNode` | Node |
+
+**Returns:** *boolean*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10856
+
+___
+
+##### isSameNode
+
+▸ **isSameNode**(`otherNode`: Node): *boolean*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`otherNode` | Node |
+
+**Returns:** *boolean*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10857
+
+___
+
+##### lookupNamespaceURI
+
+▸ **lookupNamespaceURI**(`prefix`: *string*): *string*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`prefix` | *string* |
+
+**Returns:** *string*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10858
+
+___
+
+##### lookupPrefix
+
+▸ **lookupPrefix**(`namespace`: *string*): *string*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`namespace` | *string* |
+
+**Returns:** *string*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10859
+
+___
+
+##### matches
+
+▸ **matches**(`selectors`: *string*): *boolean*
+
+Returns true if matching selectors against element's root yields element, and false otherwise.
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`selectors` | *string* |
+
+**Returns:** *boolean*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5185
+
+___
+
+##### msGetRegionContent
+
+▸ **msGetRegionContent**(): *any*
+
+**Returns:** *any*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5186
+
+___
+
+##### normalize
+
+▸ **normalize**(): *void*
+
+Removes empty exclusive Text nodes and concatenates the data of remaining contiguous exclusive Text nodes into the first of their nodes.
+
+**Returns:** *void*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10863
+
+___
+
+##### prepend
+
+▸ **prepend**(...`nodes`: (*string* \| Node)[]): *void*
+
+Inserts nodes before the first child of node, while replacing strings in nodes with equivalent Text nodes.
+
+Throws a "HierarchyRequestError" DOMException if the constraints of the node tree are violated.
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`...nodes` | (*string* \| Node)[] |
+
+**Returns:** *void*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:11362
+
+___
+
+##### querySelector
+
+▸ **querySelector**<K\>(`selectors`: K): HTMLElementTagNameMap[K]
+
+Returns the first element that is a descendant of node that matches selectors.
+
+###### Type parameters:
+
+Name | Type |
+:------ | :------ |
+`K` | *object* \| *a* \| *abbr* \| *address* \| *applet* \| *area* \| *article* \| *aside* \| *audio* \| *b* \| *base* \| *basefont* \| *bdi* \| *bdo* \| *blockquote* \| *body* \| *br* \| *button* \| *canvas* \| *caption* \| *cite* \| *code* \| *col* \| *colgroup* \| *data* \| *datalist* \| *dd* \| *del* \| *details* \| *dfn* \| *dialog* \| *dir* \| *div* \| *dl* \| *dt* \| *em* \| *embed* \| *fieldset* \| *figcaption* \| *figure* \| *font* \| *footer* \| *form* \| *frame* \| *frameset* \| *h1* \| *h2* \| *h3* \| *h4* \| *h5* \| *h6* \| *head* \| *header* \| *hgroup* \| *hr* \| *html* \| *i* \| *iframe* \| *img* \| *input* \| *ins* \| *kbd* \| *label* \| *legend* \| *li* \| *link* \| *main* \| *map* \| *mark* \| *marquee* \| *menu* \| *meta* \| *meter* \| *nav* \| *noscript* \| *ol* \| *optgroup* \| *option* \| *output* \| *p* \| *param* \| *picture* \| *pre* \| *progress* \| *q* \| *rp* \| *rt* \| *ruby* \| *s* \| *samp* \| *script* \| *section* \| *select* \| *slot* \| *small* \| *source* \| *span* \| *strong* \| *style* \| *sub* \| *summary* \| *sup* \| *table* \| *tbody* \| *td* \| *template* \| *textarea* \| *tfoot* \| *th* \| *thead* \| *time* \| *title* \| *tr* \| *track* \| *u* \| *ul* \| *var* \| *video* \| *wbr* \| *emoji-picker* |
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`selectors` | K |
+
+**Returns:** HTMLElementTagNameMap[K]
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:11366
+
+▸ **querySelector**<K\>(`selectors`: K): SVGElementTagNameMap[K]
+
+###### Type parameters:
+
+Name | Type |
+:------ | :------ |
+`K` | *symbol* \| *a* \| *script* \| *style* \| *title* \| *circle* \| *clipPath* \| *defs* \| *desc* \| *ellipse* \| *feBlend* \| *feColorMatrix* \| *feComponentTransfer* \| *feComposite* \| *feConvolveMatrix* \| *feDiffuseLighting* \| *feDisplacementMap* \| *feDistantLight* \| *feFlood* \| *feFuncA* \| *feFuncB* \| *feFuncG* \| *feFuncR* \| *feGaussianBlur* \| *feImage* \| *feMerge* \| *feMergeNode* \| *feMorphology* \| *feOffset* \| *fePointLight* \| *feSpecularLighting* \| *feSpotLight* \| *feTile* \| *feTurbulence* \| *filter* \| *foreignObject* \| *g* \| *image* \| *line* \| *linearGradient* \| *marker* \| *mask* \| *metadata* \| *path* \| *pattern* \| *polygon* \| *polyline* \| *radialGradient* \| *rect* \| *stop* \| *svg* \| *switch* \| *text* \| *textPath* \| *tspan* \| *use* \| *view* |
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`selectors` | K |
+
+**Returns:** SVGElementTagNameMap[K]
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:11367
+
+▸ **querySelector**<E\>(`selectors`: *string*): E
+
+###### Type parameters:
+
+Name | Type | Default |
+:------ | :------ | :------ |
+`E` | Element | Element |
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`selectors` | *string* |
+
+**Returns:** E
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:11368
+
+___
+
+##### querySelectorAll
+
+▸ **querySelectorAll**<K\>(`selectors`: K): *NodeListOf*<HTMLElementTagNameMap[K]\>
+
+Returns all element descendants of node that match selectors.
+
+###### Type parameters:
+
+Name | Type |
+:------ | :------ |
+`K` | *object* \| *a* \| *abbr* \| *address* \| *applet* \| *area* \| *article* \| *aside* \| *audio* \| *b* \| *base* \| *basefont* \| *bdi* \| *bdo* \| *blockquote* \| *body* \| *br* \| *button* \| *canvas* \| *caption* \| *cite* \| *code* \| *col* \| *colgroup* \| *data* \| *datalist* \| *dd* \| *del* \| *details* \| *dfn* \| *dialog* \| *dir* \| *div* \| *dl* \| *dt* \| *em* \| *embed* \| *fieldset* \| *figcaption* \| *figure* \| *font* \| *footer* \| *form* \| *frame* \| *frameset* \| *h1* \| *h2* \| *h3* \| *h4* \| *h5* \| *h6* \| *head* \| *header* \| *hgroup* \| *hr* \| *html* \| *i* \| *iframe* \| *img* \| *input* \| *ins* \| *kbd* \| *label* \| *legend* \| *li* \| *link* \| *main* \| *map* \| *mark* \| *marquee* \| *menu* \| *meta* \| *meter* \| *nav* \| *noscript* \| *ol* \| *optgroup* \| *option* \| *output* \| *p* \| *param* \| *picture* \| *pre* \| *progress* \| *q* \| *rp* \| *rt* \| *ruby* \| *s* \| *samp* \| *script* \| *section* \| *select* \| *slot* \| *small* \| *source* \| *span* \| *strong* \| *style* \| *sub* \| *summary* \| *sup* \| *table* \| *tbody* \| *td* \| *template* \| *textarea* \| *tfoot* \| *th* \| *thead* \| *time* \| *title* \| *tr* \| *track* \| *u* \| *ul* \| *var* \| *video* \| *wbr* \| *emoji-picker* |
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`selectors` | K |
+
+**Returns:** *NodeListOf*<HTMLElementTagNameMap[K]\>
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:11372
+
+▸ **querySelectorAll**<K\>(`selectors`: K): *NodeListOf*<SVGElementTagNameMap[K]\>
+
+###### Type parameters:
+
+Name | Type |
+:------ | :------ |
+`K` | *symbol* \| *a* \| *script* \| *style* \| *title* \| *circle* \| *clipPath* \| *defs* \| *desc* \| *ellipse* \| *feBlend* \| *feColorMatrix* \| *feComponentTransfer* \| *feComposite* \| *feConvolveMatrix* \| *feDiffuseLighting* \| *feDisplacementMap* \| *feDistantLight* \| *feFlood* \| *feFuncA* \| *feFuncB* \| *feFuncG* \| *feFuncR* \| *feGaussianBlur* \| *feImage* \| *feMerge* \| *feMergeNode* \| *feMorphology* \| *feOffset* \| *fePointLight* \| *feSpecularLighting* \| *feSpotLight* \| *feTile* \| *feTurbulence* \| *filter* \| *foreignObject* \| *g* \| *image* \| *line* \| *linearGradient* \| *marker* \| *mask* \| *metadata* \| *path* \| *pattern* \| *polygon* \| *polyline* \| *radialGradient* \| *rect* \| *stop* \| *svg* \| *switch* \| *text* \| *textPath* \| *tspan* \| *use* \| *view* |
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`selectors` | K |
+
+**Returns:** *NodeListOf*<SVGElementTagNameMap[K]\>
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:11373
+
+▸ **querySelectorAll**<E\>(`selectors`: *string*): *NodeListOf*<E\>
+
+###### Type parameters:
+
+Name | Type | Default |
+:------ | :------ | :------ |
+`E` | Element | Element |
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`selectors` | *string* |
+
+**Returns:** *NodeListOf*<E\>
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:11374
+
+___
+
+##### releasePointerCapture
+
+▸ **releasePointerCapture**(`pointerId`: *number*): *void*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`pointerId` | *number* |
+
+**Returns:** *void*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5187
+
+___
+
+##### remove
+
+▸ **remove**(): *void*
+
+Removes node.
+
+**Returns:** *void*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:3508
+
+___
+
+##### removeAttribute
+
+▸ **removeAttribute**(`qualifiedName`: *string*): *void*
+
+Removes element's first attribute whose qualified name is qualifiedName.
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`qualifiedName` | *string* |
+
+**Returns:** *void*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5191
+
+___
+
+##### removeAttributeNS
+
+▸ **removeAttributeNS**(`namespace`: *string*, `localName`: *string*): *void*
+
+Removes element's attribute whose namespace is namespace and local name is localName.
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`namespace` | *string* |
+`localName` | *string* |
+
+**Returns:** *void*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5195
+
+___
+
+##### removeAttributeNode
+
+▸ **removeAttributeNode**(`attr`: Attr): Attr
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`attr` | Attr |
+
+**Returns:** Attr
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5196
+
+___
+
+##### removeChild
+
+▸ **removeChild**<T\>(`oldChild`: T): T
+
+###### Type parameters:
+
+Name | Type |
+:------ | :------ |
+`T` | Node |
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`oldChild` | T |
+
+**Returns:** T
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10864
+
+___
+
+##### removeEventListener
+
+▸ **removeEventListener**<K\>(`type`: K, `listener`: (`ev`: *EmojiPickerEventMap*[K]) => *any*, `options?`: *boolean* \| EventListenerOptions): *void*
+
+###### Type parameters:
+
+Name | Type |
+:------ | :------ |
+`K` | *emoji-click* \| *skin-tone-change* |
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`type` | K |
+`listener` | (`ev`: *EmojiPickerEventMap*[K]) => *any* |
+`options?` | *boolean* \| EventListenerOptions |
+
+**Returns:** *void*
+
+Defined in: src/types/picker.ts:35
+
+___
+
+##### replaceChild
+
+▸ **replaceChild**<T\>(`newChild`: Node, `oldChild`: T): T
+
+###### Type parameters:
+
+Name | Type |
+:------ | :------ |
+`T` | Node |
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`newChild` | Node |
+`oldChild` | T |
+
+**Returns:** T
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:10865
+
+___
+
+##### replaceWith
+
+▸ **replaceWith**(...`nodes`: (*string* \| Node)[]): *void*
+
+Replaces node with nodes, while replacing strings in nodes with equivalent Text nodes.
+
+Throws a "HierarchyRequestError" DOMException if the constraints of the node tree are violated.
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`...nodes` | (*string* \| Node)[] |
+
+**Returns:** *void*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:3514
+
+___
+
+##### requestFullscreen
+
+▸ **requestFullscreen**(`options?`: FullscreenOptions): *Promise*<void\>
+
+Displays element fullscreen and resolves promise when done.
+
+When supplied, options's navigationUI member indicates whether showing navigation UI while in fullscreen is preferred or not. If set to "show", navigation simplicity is preferred over screen space, and if set to "hide", more screen space is preferred. User agents are always free to honor user preference over the application's. The default value "auto" indicates no application preference.
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`options?` | FullscreenOptions |
+
+**Returns:** *Promise*<void\>
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5202
+
+___
+
+##### requestPointerLock
+
+▸ **requestPointerLock**(): *void*
+
+**Returns:** *void*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5203
+
+___
+
+##### scroll
+
+▸ **scroll**(`options?`: ScrollToOptions): *void*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`options?` | ScrollToOptions |
+
+**Returns:** *void*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5204
+
+▸ **scroll**(`x`: *number*, `y`: *number*): *void*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`x` | *number* |
+`y` | *number* |
+
+**Returns:** *void*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5205
+
+___
+
+##### scrollBy
+
+▸ **scrollBy**(`options?`: ScrollToOptions): *void*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`options?` | ScrollToOptions |
+
+**Returns:** *void*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5206
+
+▸ **scrollBy**(`x`: *number*, `y`: *number*): *void*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`x` | *number* |
+`y` | *number* |
+
+**Returns:** *void*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5207
+
+___
+
+##### scrollIntoView
+
+▸ **scrollIntoView**(`arg?`: *boolean* \| ScrollIntoViewOptions): *void*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`arg?` | *boolean* \| ScrollIntoViewOptions |
+
+**Returns:** *void*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5208
+
+___
+
+##### scrollTo
+
+▸ **scrollTo**(`options?`: ScrollToOptions): *void*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`options?` | ScrollToOptions |
+
+**Returns:** *void*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5209
+
+▸ **scrollTo**(`x`: *number*, `y`: *number*): *void*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`x` | *number* |
+`y` | *number* |
+
+**Returns:** *void*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5210
+
+___
+
+##### setAttribute
+
+▸ **setAttribute**(`qualifiedName`: *string*, `value`: *string*): *void*
+
+Sets the value of element's first attribute whose qualified name is qualifiedName to value.
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`qualifiedName` | *string* |
+`value` | *string* |
+
+**Returns:** *void*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5214
+
+___
+
+##### setAttributeNS
+
+▸ **setAttributeNS**(`namespace`: *string*, `qualifiedName`: *string*, `value`: *string*): *void*
+
+Sets the value of element's attribute whose namespace is namespace and local name is localName to value.
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`namespace` | *string* |
+`qualifiedName` | *string* |
+`value` | *string* |
+
+**Returns:** *void*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5218
+
+___
+
+##### setAttributeNode
+
+▸ **setAttributeNode**(`attr`: Attr): Attr
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`attr` | Attr |
+
+**Returns:** Attr
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5219
+
+___
+
+##### setAttributeNodeNS
+
+▸ **setAttributeNodeNS**(`attr`: Attr): Attr
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`attr` | Attr |
+
+**Returns:** Attr
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5220
+
+___
+
+##### setPointerCapture
+
+▸ **setPointerCapture**(`pointerId`: *number*): *void*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`pointerId` | *number* |
+
+**Returns:** *void*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5221
+
+___
+
+##### toggleAttribute
+
+▸ **toggleAttribute**(`qualifiedName`: *string*, `force?`: *boolean*): *boolean*
+
+If force is not given, "toggles" qualifiedName, removing it if it is present and adding it if it is not present. If force is true, adds qualifiedName. If force is false, removes qualifiedName.
+
+Returns true if qualifiedName is now present, and false otherwise.
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`qualifiedName` | *string* |
+`force?` | *boolean* |
+
+**Returns:** *boolean*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5227
+
+___
+
+##### webkitMatchesSelector
+
+▸ **webkitMatchesSelector**(`selectors`: *string*): *boolean*
+
+###### Parameters:
+
+Name | Type |
+:------ | :------ |
+`selectors` | *string* |
+
+**Returns:** *boolean*
+
+Defined in: node_modules/typescript/lib/lib.dom.d.ts:5228
 
 
 <!-- database API end -->
