@@ -24,7 +24,7 @@ import * as widthCalculator from '../../utils/widthCalculator'
 import { checkZwjSupport } from '../../utils/checkZwjSupport'
 import { requestPostAnimationFrame } from '../../utils/requestPostAnimationFrame'
 import { stop } from '../../../shared/marks'
-import { onMount, onDestroy, tick } from 'svelte'
+import { onMount, tick } from 'svelte'
 import { requestAnimationFrame } from '../../utils/requestAnimationFrame'
 import { uniq } from '../../../shared/uniq'
 
@@ -143,16 +143,18 @@ $: {
   }
 }
 
-// TODO: this is a bizarre way to set these default properties, but currently Svelte
-// renders custom elements in an odd way - props are not set when calling the constructor,
-// but are only set later. This would cause a double render or a double-fetch of
-// the dataSource, which is bad. Delaying with a microtask avoids this.
-// See https://github.com/sveltejs/svelte/pull/4527
-onMount(async () => {
-  await tick()
+onMount(() => {
   log('props ready: setting locale and dataSource to default')
   locale = locale || DEFAULT_LOCALE
   dataSource = dataSource || DEFAULT_DATA_SOURCE
+  return () => {
+    if (database) {
+      log('closing database')
+      database.close().catch(err => {
+        logError(err) // only happens if the database failed to load in the first place, so we don't care
+      })
+    }
+  }
 })
 $: {
   if (locale && dataSource && (!database || (database.locale !== locale && database.dataSource !== dataSource))) {
@@ -160,17 +162,6 @@ $: {
     database = new Database({ dataSource, locale })
   }
 }
-
-onDestroy(async () => {
-  if (database) {
-    log('closing database')
-    try {
-      await database.close()
-    } catch (err) {
-      logError(err) // only happens if the database failed to load in the first place, so we don't care
-    }
-  }
-})
 
 //
 // Global styles for the entire picker
