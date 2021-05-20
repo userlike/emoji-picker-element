@@ -22,7 +22,7 @@ import { summarizeEmojisForUI } from '../../utils/summarizeEmojisForUI'
 import * as widthCalculator from '../../utils/widthCalculator'
 import { checkZwjSupport } from '../../utils/checkZwjSupport'
 import { requestPostAnimationFrame } from '../../utils/requestPostAnimationFrame'
-import { onMount, onDestroy, tick } from 'svelte'
+import { onMount, tick } from 'svelte'
 import { requestAnimationFrame } from '../../utils/requestAnimationFrame'
 import { uniq } from '../../../shared/uniq'
 
@@ -146,11 +146,20 @@ $: {
 // but are only set later. This would cause a double render or a double-fetch of
 // the dataSource, which is bad. Delaying with a microtask avoids this.
 // See https://github.com/sveltejs/svelte/pull/4527
-onMount(async () => {
-  await tick()
-  console.log('props ready: setting locale and dataSource to default')
-  locale = locale || DEFAULT_LOCALE
-  dataSource = dataSource || DEFAULT_DATA_SOURCE
+onMount(() => {
+  tick().then(() => {
+    console.log('props ready: setting locale and dataSource to default')
+    locale = locale || DEFAULT_LOCALE
+    dataSource = dataSource || DEFAULT_DATA_SOURCE
+  })
+  return () => {
+    if (database) {
+      console.log('closing database')
+      database.close().catch(err => {
+        console.error(err) // only happens if the database failed to load in the first place, so we don't care
+      })
+    }
+  }
 })
 $: {
   if (locale && dataSource && (!database || (database.locale !== locale && database.dataSource !== dataSource))) {
@@ -158,17 +167,6 @@ $: {
     database = new Database({ dataSource, locale })
   }
 }
-
-onDestroy(async () => {
-  if (database) {
-    console.log('closing database')
-    try {
-      await database.close()
-    } catch (err) {
-      console.error(err) // only happens if the database failed to load in the first place, so we don't care
-    }
-  }
-})
 
 //
 // Global styles for the entire picker

@@ -7,13 +7,6 @@ export default class Picker extends SveltePicker {
     super({ props })
   }
 
-  disconnectedCallback () {
-    // Have to explicitly destroy the component to avoid memory leaks.
-    // See https://github.com/sveltejs/svelte/issues/1152
-    console.log('disconnectedCallback')
-    this.$destroy()
-  }
-
   static get observedAttributes () {
     return ['locale', 'data-source', 'skin-tone-emoji'] // complex objects aren't supported, also use kebab-case
   }
