@@ -1,3 +1,12 @@
+# [1.6.0-alpha.0](https://github.com/nolanlawson/emoji-picker-element/compare/v1.5.0...v1.6.0-alpha.0) (2021-06-10)
+
+
+### Bug Fixes
+
+* refactor to new svelte onMount api ([871bf25](https://github.com/nolanlawson/emoji-picker-element/commit/871bf25edeb1c578061aa424283706d047625e33))
+
+
+
 # [1.5.0](https://github.com/nolanlawson/emoji-picker-element/compare/v1.4.0...v1.5.0) (2021-05-31)
 
 
