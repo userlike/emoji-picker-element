@@ -1,5 +1,5 @@
 {
-  "name": "emoji-picker-element",
+  "name": "@userlike/emoji-picker-element",
   "version": "1.6.0-alpha.0",
   "description": "Lightweight emoji picker distributed as a web component",
   "main": "index.js",
